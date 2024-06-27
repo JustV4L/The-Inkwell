@@ -1,0 +1,76 @@
+/* Reset styles */
+* {
+  margin: 15px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Indie Flower', cursive; /* Changed font */
+  line-height: 1.6;
+  background-color: #fefbd8; /* Changed background color to a soft yellow */
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: justify;
+}
+
+/* Header Styles */
+header {
+  background: #4b2502; /* Kept background color */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f0f0f0;
+}
+
+/* Scrapbook Styles */
+body {
+  background-image: url('scrapbook_background.jpg'); /* Add a background image */
+  background-size: cover;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  border: 5px solid #3d2a06; /* Golden border */
+  padding: 40px; /* Increased padding */
+}
+header {
+  border-bottom: 5px solid #3d2a06; /* Golden border */
+  margin-bottom: 40px; /* Increased margin */
+}
+
+header h1 {
+  font-family: 'Permanent Marker', cursive; /* Changed font */
+}
+
+nav {
+  margin-top: 20px; /* Adjusted margin */
+}
+
+nav a {
+  font-size: 1rem; /* Adjusted font size */
+}
+
+
