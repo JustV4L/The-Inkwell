@@ -1,0 +1,116 @@
+/* academic aveneu.css */
+
+/* Contenedor del calendario */
+.calendar-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Cabecera del calendario */
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Botones de navegación */
+.month-btn {
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.month-btn:hover {
+  background-color: #f7f7f7;
+}
+
+.month-btn svg {
+  fill: #666;
+}
+
+/* Mostrar mes y año actual */
+#currentMonthYear {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 20px;
+  color: #333;
+}
+
+/* Grid del calendario */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+/* Días del calendario */
+.calendar-day {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.calendar-day:hover {
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+/* Panel de eventos */
+.events-panel {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: none;
+}
+
+.events-panel h2 {
+  margin-top: 0;
+}
+
+#eventList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#eventList li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#eventList li:last-child {
+  border-bottom: none;
+}
+
+#closeEventsPanel {
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#closeEventsPanel:hover {
+  background-color: #f7f7f7;
+}

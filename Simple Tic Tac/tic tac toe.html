@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="css/tictactoe.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Tic Tac Toe</h1>
+    <nav>
+      <button id="play-btn">Play vs AI</button>
+      <button id="multiplayer-btn">Play Multiplayer</button>
+      <button id="exit" src="../curious minds.html">EXIT</button>
+    </nav>
+  </header>
+  <main>
+    <div class="content-wrapper">
+      <div class="game-board">
+        <table id="board">
+          <tr>
+            <td class="field" id="0"></td>
+            <td class="field" id="1"></td>
+            <td class="field" id="2"></td>
+          </tr>
+          <tr>
+            <td class="field" id="3"></td>
+            <td class="field" id="4"></td>
+            <td class="field" id="5"></td>
+          </tr>
+          <tr>
+            <td class="field" id="6"></td>
+            <td class="field" id="7"></td>
+            <td class="field" id="8"></td>
+          </tr>
+        </table>
+        <div id="game-status"></div>
+        <button id="restart-btn">Restart Game</button>
+      </div>
+      <div class="instructions">
+        <h2>Instructions</h2>
+        <p>Welcome to Tic Tac Toe!</p>
+        <ul>
+          <li>Click "Play vs AI" to play against the computer.</li>
+          <li>Click "Play Multiplayer" to play with a friend.</li>
+          <li>Click on a cell to make a move.</li>
+          <li>The first player to align three symbols horizontally, vertically, or diagonally wins.</li>
+          <li>If all cells are filled and no player has aligned three symbols, the game is a draw.</li>
+          <li>Click "Restart Game" to reset the board.</li>
+          <li>IF YOU DON´T< CLICK ANY BUTTON THE MULTIPLAYER WILL START WORKING/li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <script src="js/tictactoe.js"></script>
+</body>
+</html>

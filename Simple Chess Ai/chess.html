@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="lib/chessboardjs/css/chessboard-0.3.0.css">
+    <link rel="stylesheet" href="chess.css">
+</head>
+<body>
+    <header>
+        <h1>Chess Game</h1>
+        <a href="../curious minds.html">⬅️</a>
+    </header>
+    <div class="container">
+        <div class="left-column">
+            <div id="board" class="board"></div>
+            <div class="info">
+                Search depth:
+                <select id="search-depth">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <br>
+                <span>Positions evaluated: <span id="position-count"></span></span>
+                <br>
+                <span>Time: <span id="time"></span></span>
+                <br>
+                <span>Positions/s: <span id="positions-per-s"></span> </span>
+                <br>
+                <br>
+                <div id="move-history" class="move-history">
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <h2>Instructions</h2>
+            <p>Welcome to our Chess Game! Here are some instructions to get you started:</p>
+            <ul>
+                <li>Use the search depth selector to adjust the difficulty.</li>
+                <li>View the number of positions evaluated and the time taken for each move.</li>
+                <li>Monitor the positions per second to see the efficiency of the engine.</li>
+                <li>Check the move history to review your game.</li>
+            </ul>
+        </div>
+    </div>
+    <script src="lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="lib/chessboardjs/js/pieces.js"></script>
+    <script src="lib/chessboardjs/js/chessboard-0.3.0.js"></script>
+    <script src="chess.js"></script>
+</body>
+</html>

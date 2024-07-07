@@ -1,0 +1,166 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* Header Styles */
+
+header {
+  background-color: #0a0042;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f8f8f8;
+}
+
+/* Navigation Styles */
+
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav button {
+  background-color: #4c74af;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease; /* Add transition effect */
+}
+
+nav button:hover {
+  background-color: #4c74af;
+}
+
+/* Main Content Styles */
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+  gap: 40px; /* Adjust the gap as needed */
+}
+
+/* Game Board Styles */
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#board {
+  border-collapse: collapse;
+  width: 400px;
+  height: 400px;
+}
+
+.field {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 60px;
+  cursor: pointer;
+  transition: background-color 0.2s ease; /* Add transition effect */
+}
+
+.field:hover {
+  background-color: #f0f0f0;
+}
+
+/* Game Status and Restart Button Styles */
+
+#game-status {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#restart-btn {
+  background-color: #f44336;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.2s ease; /* Add transition effect */
+}
+
+#restart-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Instructions Styles */
+
+.instructions {
+  text-align: left;
+  max-width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.instructions h2 {
+  font-size: 24px;
+}
+
+.instructions p {
+  font-size: 18px;
+}
+
+.instructions ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.instructions li {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* styles.css */
+button#exit {
+  color: #d32f2f;
+  font-style: normal;
+  font-family: 'Lilita One', sans-serif;
+  background-color: transparent;
+  border: 2px solid #d32f2f;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button#exit:hover {
+  background-color: #d32f2f;
+  color: #fff;
+}
