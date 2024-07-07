@@ -1,84 +1,118 @@
-/* academic aveneu.css */
+/* Global Styles */
 
-/* Contenedor del calendario */
-.calendar-container {
-  max-width: 400px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #f7f7f7;
-  border: 1px solid #ddd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  overflow: hidden;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Cabecera del calendario */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+h1, h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+/* Navigation Bar */
+
+nav {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  margin-right: 20px;
+}
+
+nav a:hover {
+  color: #337ab7;
+}
+
+/* Calendar Container */
+
+.calendar-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .calendar-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
 }
 
-/* Botones de navegación */
 .month-btn {
-  background-color: #fff;
+  background-color: #337ab7;
+  color: #fff;
   border: none;
   padding: 10px;
-  font-size: 16px;
   cursor: pointer;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .month-btn:hover {
-  background-color: #f7f7f7;
+  background-color: #23527c;
 }
 
 .month-btn svg {
-  fill: #666;
+  fill: #fff;
 }
 
-/* Mostrar mes y año actual */
 #currentMonthYear {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   margin: 0 20px;
-  color: #333;
 }
 
-/* Grid del calendario */
+/* Calendar Grid */
+
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-gap: 10px;
-  padding: 20px;
 }
 
-/* Días del calendario */
 .calendar-day {
-  background-color: #fff;
+  background-color: #f9f9f9;
   padding: 10px;
   border: 1px solid #ddd;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-}
-
-.calendar-day:hover {
-  background-color: #f7f7f7;
   cursor: pointer;
 }
 
-/* Panel de eventos */
+.calendar-day:hover {
+  background-color: #337ab7;
+  color: #fff;
+}
+
+/* Events Panel */
+
 .events-panel {
   background-color: #fff;
   padding: 20px;
   border: 1px solid #ddd;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
   display: none;
 }
 
@@ -102,15 +136,13 @@
 }
 
 #closeEventsPanel {
-  background-color: #fff;
+  background-color: #337ab7;
+  color: #fff;
   border: none;
   padding: 10px;
-  font-size: 16px;
   cursor: pointer;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #closeEventsPanel:hover {
-  background-color: #f7f7f7;
+  background-color: #23527c;
 }
